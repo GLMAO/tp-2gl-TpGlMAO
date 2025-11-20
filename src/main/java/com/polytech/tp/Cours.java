@@ -10,7 +10,7 @@ public class Cours implements ICours {
     private String niveau;
     private boolean necessiteProjecteur;
 
-    
+    // Le constructeur peut rester public ou passer en package-private
     public Cours(String matiere, String enseignant, String salle, String date, 
                  String heureDebut, boolean estOptionnel, String niveau, boolean necessiteProjecteur) {
         this.matiere = matiere;
@@ -30,10 +30,10 @@ public class Cours implements ICours {
 
     @Override
     public double getDuree() {
-        return 1.5; 
+        return 1.5;
     }
     
-    
+    // Getters
     public String getMatiere() { return matiere; }
     public String getEnseignant() { return enseignant; }
 }
